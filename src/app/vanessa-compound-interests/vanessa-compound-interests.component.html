@@ -1,0 +1,12 @@
+<h2>Juros Compostos</h2>
+<div>
+  <p>Digite o Capital:</p>
+  <input [(ngModel)]="n1" type="number" />
+  <p [(ngModel)]="n2" type="number"></p>
+  <p>Juros fixo de 8%</p>
+  <p [(ngModel)]="n3" type="number"></p>
+  <p>Digite o periodo:</p>
+  <input [(ngModel)]="n4" type="number" />
+
+  {{ n1 }} * ({{ n3 }} + {{ n2 }}(taxa)) * {{n4}}  = {{ getSum() }}
+</div>
